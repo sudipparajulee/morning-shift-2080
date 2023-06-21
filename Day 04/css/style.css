@@ -1,0 +1,43 @@
+body{
+    font-family: sans-serif;
+}
+
+.service-section{
+    background-color: rgb(236, 236, 239);
+    overflow: hidden;
+}
+
+.service-section h1{
+    text-align: center;
+}
+
+.service-container{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.outer-div{
+    width: 25%;
+    float: left;
+    /* background-color: red; */
+}
+
+.inner-div{
+    background-color: rgb(214, 214, 220);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 4px solid blue;
+    /* box-shadow: [h-offset] [v-offset] [blur-radius] [optional spread-radius] [color]; */
+
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.inner-div:hover{
+    box-shadow: 0px 2px 10px rgb(186, 181, 181);
+    background-color: rgb(48, 48, 141);
+    color: white;
+    transform: scale(1.04);
+}
