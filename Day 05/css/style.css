@@ -1,0 +1,80 @@
+body{
+    font-family: sans-serif;
+}
+
+.pricing-section{
+    padding: 10px 200px;
+    overflow: hidden;
+}
+
+.pricing-section > h3{
+    text-align: center;
+}
+
+.pricing-container{
+    padding: 20px;
+}
+
+.outer-div{
+    width: 33.33%;
+    float: left;
+}
+
+.inner-div{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: aqua;
+}
+
+.blue-div{
+    background-color: blue;
+    color: white;
+    border-radius: 150px 0px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.blue-div:hover{
+    border-radius: 0px 150px;
+}
+
+.mytable{
+    border-collapse: collapse;
+    width: 500px;
+    margin: auto;
+}
+
+.mytable th, .mytable td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.mytable th{
+    background-color: green;
+    color: white;
+}
+
+
+.mytable tr:nth-child(odd){
+    background-color: rgb(210, 201, 201);
+}
+
+
+.mytable tr:hover{
+    background-color: aqua;
+}
+
+.flex-container{
+    padding: 50px 150px;
+    display: flex;
+}
+
+.flex-div{
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
