@@ -1,0 +1,55 @@
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.supportbtn{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: blue;
+    margin: 15px;
+}
+
+.mydiv{
+    display: flex;
+    background-color: gray;
+    height: 200px;
+    /* justify-content: center; */
+    /* justify-content: end; */
+    align-items: center;
+}
+
+.mydiv p, .mydiv div{
+    flex: 1;
+    color: rgb(51, 40, 40);
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 150px;
+}
+
+.service{
+    background-color: aqua;
+    border-radius: 15px;
+    padding: 15px;
+}
