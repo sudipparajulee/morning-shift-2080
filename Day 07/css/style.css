@@ -1,0 +1,82 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 50px;
+    box-shadow: 0px 1px 5px rgb(205, 197, 197);
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: blue;
+    margin: 10px;
+}
+
+.bluebtn{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+.service-section{
+    padding: 50px 150px;
+}
+
+.service-section h1, .service-section > p{
+    text-align: center;
+    margin: 0;
+}
+
+.service-section h1{
+    font-size: 40px;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.services{
+    background-color: rgb(225, 228, 231);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(227, 225, 225);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.services:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 2px 8px rgb(206, 200, 200);
+
+}
+
+.service-detail{
+    padding: 10px;
+}
+
+.services img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.service-detail p{
+    text-align: justify;
+}
