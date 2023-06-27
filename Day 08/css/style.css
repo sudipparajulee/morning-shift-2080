@@ -1,0 +1,16 @@
+.mytable{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.mytable th, .mytable td{
+    border: 1px solid black;
+}
+
+.mydiv{
+    background-color: blue;
+    color: white;
+    margin: 50px;
+    border: 10px solid green;
+    padding: 20px;
+}
