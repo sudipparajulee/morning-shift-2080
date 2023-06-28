@@ -80,3 +80,29 @@ body{
 .service-detail p{
     text-align: justify;
 }
+
+@media (max-width:1200px)
+{
+    .service-section{
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .service-section{
+        padding: 50px 50px;
+    }
+    .service-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 512px){
+    .service-section{
+        padding: 20px;
+    }
+    .service-container{
+        grid-template-columns: 1fr;
+    }
+}

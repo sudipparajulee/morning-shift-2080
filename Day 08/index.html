@@ -38,11 +38,12 @@
         </div>
         
         <form action="">
-            <input type="text" placeholder="Enter Name" value="Hello">
-            <input type="password">
-            <input type="email">
-            <input type="number">
-            <input type="radio">
+            <input type="text" placeholder="Enter Name" value="Hello" required>
+            <input type="password" required>
+            <input type="email" minlength="8" maxlength="10">
+            <input type="number" min="0" max="10">
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label>
             <input type="checkbox">
             <input type="date">
             <input type="time">
@@ -51,6 +52,7 @@
             <input type="reset">
             <textarea name="" id=""></textarea>
             <select name="" id="">
+                <option value="" disabled selected>Choose Language</option>
                 <option value="">BCA</option>
                 <option value="">BIM</option>
                 <option value="">CSIT</option>
