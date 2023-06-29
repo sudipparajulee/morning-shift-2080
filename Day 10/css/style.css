@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.top-nav{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 0px 1px 8px rgb(217, 214, 214);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: blue;
+    margin: 10px;
+}
+
+.navbar > a{
+    background-color: blue;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+.service-section{
+    margin: 100px 20px;
+}
+
+.service-section h1, .service-section > p{
+    text-align: center;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 200px;
+}
+
+.service{
+    background-color: rgb(235, 231, 231);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.service img{
+    width: 100%;
+
+}
+
+.discount{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
