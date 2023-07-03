@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <button onclick="addition()">Sum</button>
+
+        <button id="mybtn" onclick="myFunction()">Click</button>
+
+        <!-- This is a comment -->
+        <script>
+
+            function addition(){
+                // document.getElementById('num1').value = "5";
+                var num1 = document.getElementById('num1').value;
+                var num2 = document.getElementById('num2').value;
+                var sum = parseInt(num1) + parseInt(num2);
+                alert(sum);
+            }
+
+            function myFunction()
+            {
+                // alert('the button is clicked');
+                document.getElementById('mybtn').innerHTML = "Clicked";
+                document.getElementById('mybtn').style.color = "white";
+                document.getElementById('mybtn').style.backgroundColor = "blue";
+                document.getElementById('mybtn').style.border = 'none';
+            }
+
+            var a = 2;
+            var b = 3;
+            var sum = a+b;
+            document.write(sum);
+
+            //check for even or odd
+            var num = 518;
+            if(num%2 == 0)
+            {
+                document.write(num + ' is even');
+                // document.write(`${num} is even`);
+            }
+            else
+            {
+                document.write('this is odd');
+            }
+        </script>
+    </body>
+</html>

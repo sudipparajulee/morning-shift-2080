@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Simple Interest</title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            .simple-interest{
+                width: 600px;
+                padding: 15px;
+                margin: 50px auto 0 auto;
+                background-color: aqua;
+                border-radius: 10px;
+            }
+
+            .simple-interest h1{
+                text-align: center;
+            }
+
+            .simple-interest input, .simple-interest button{
+                display: block;
+                width: 90%;
+                margin: 10px auto;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+            
+            }
+
+            .simple-interest input:focus{
+                outline: 2px solid blue;
+            }
+
+            .simple-interest button{
+                background-color: blue;
+                color: white;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="simple-interest">
+            <h1>Simple Interest Calculator</h1>
+            <input type="text" placeholder="Enter Principal" id="principal">
+        <input type="text" placeholder="Enter Rate" id="rate">
+        <input type="text" placeholder="Enter Time in Years" id="time">
+        <button onclick="interest()">Calculate</button>
+        <h2 id="result"></h2>
+        </div>
+        <script>
+            function interest(){
+                var p = document.getElementById('principal').value;
+                var r = document.getElementById('rate').value;
+                var t = document.getElementById('time').value;
+
+                var interest = (p*t*r / 100).toFixed(2);
+                document.getElementById('result').innerHTML = "The Simple Interest is Rs." + interest + "/-";
+            }
+        </script>
+    </body>
+</html>
