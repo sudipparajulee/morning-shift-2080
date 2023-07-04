@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Display Clock</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="mydiv">
+            <div class="inner-div">
+                <h1 id="clock"></h1>
+            </div>
+        </div>
+
+        <script>
+            var clock = document.getElementById('clock');
+            function runclock()
+            {
+                var curdate = new Date();
+                var h = curdate.getHours();
+                var m = curdate.getMinutes();
+                var s = curdate.getSeconds();
+
+                clock.innerHTML = check(h)+':'+check(m)+':'+check(s);
+            }
+
+            function check(x)
+            {
+                if(x<10)
+                {
+                    return '0'+x;
+                }
+                else
+                {
+                    return x;
+                }
+            }
+
+            runclock();
+            setInterval(runclock,1000);
+        </script>
+    </body>
+</html>
