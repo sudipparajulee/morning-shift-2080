@@ -12,6 +12,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 <style>
     body{
         font-family: Poppins, sans-serif;
@@ -50,14 +57,37 @@
     <!-- End of Navbar -->
 
 
-    <!-- Start of banner -->
-    <div class="relative">
-        <img src="https://admin.ntb.gov.np/image-cache/ebc_tk_adventure_2-1624450765.jpeg?p=main&s=1f72965258be9625bee4886c373424ad" class="w-full h-[80vh] object-cover" alt="">
-        <div class="absolute bottom-10 right-4 bg-black bg-opacity-60 text-white p-2 rounded-lg w-4/12">
-            <h1 class="text-2xl font-bold text-center">Mount Everest</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem consequuntur aliquam deserunt optio facere ratione, praesentium neque, officia necessitatibus iure dolor voluptates, eius reprehenderit nisi beatae? Fugiat non minima animi!</p>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="relative">
+                <img src="https://admin.ntb.gov.np/image-cache/ebc_tk_adventure_2-1624450765.jpeg?p=main&s=1f72965258be9625bee4886c373424ad" class="w-full h-[80vh] object-cover" alt="">
+                <div class="absolute bottom-10 right-4 bg-black bg-opacity-60 text-white p-2 rounded-lg w-4/12">
+                    <h1 class="text-2xl font-bold text-center">Mount Everest</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem consequuntur aliquam deserunt optio facere ratione, praesentium neque, officia necessitatibus iure dolor voluptates, eius reprehenderit nisi beatae? Fugiat non minima animi!</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="relative">
+                <img src="https://admin.ntb.gov.np/image-cache/ebc_tk_adventure_2-1624450765.jpeg?p=main&s=1f72965258be9625bee4886c373424ad" class="w-full h-[80vh] object-cover" alt="">
+                <div class="absolute bottom-10 right-4 bg-black bg-opacity-60 text-white p-2 rounded-lg w-4/12">
+                    <h1 class="text-2xl font-bold text-center">Mount Everest</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem consequuntur aliquam deserunt optio facere ratione, praesentium neque, officia necessitatibus iure dolor voluptates, eius reprehenderit nisi beatae? Fugiat non minima animi!</p>
+                </div>
+            </div>
+          </div>
+
         </div>
-    </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+    <!-- Start of banner -->
+    
     <!-- End of banner -->
 
 
@@ -73,28 +103,67 @@
         <h2 class="font-bold text-4xl text-center">Our Services</h2>
         <p class="text-gray-700 text-center">Here are our services</p>
 
-        <div class="grid grid-cols-3 gap-10 px-24 py-10">
-            <div class="relative group">
-                <img src="https://mmatnepal.com/public/services/PDi9xXevHAAWRKuejPIZ.png" alt="">
-                <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-40 text-white cursor-pointer">
-                    Jeep Safari
-                </div>
-            </div>
-            
-            <div class="relative group">
-            <img src="https://mmatnepal.com/public/services/X7SZcxqXmFnMuvQeOAuH.png" alt="">
-                <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
-                    Jeep Safari
-                </div>
-            </div>
 
-            <div class="relative group">
-                <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
-                <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
-                    Jeep Safari
+        <div class="swiper mySwiper2 mx-24">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/PDi9xXevHAAWRKuejPIZ.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-40 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/X7SZcxqXmFnMuvQeOAuH.png" alt="">
+                        <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                            Jeep Safari
+                        </div>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
             </div>
-        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
     </div>
     <!-- End of Services -->
 
@@ -361,5 +430,96 @@
     <!-- End of Blogs -->
 
 
+
+    <!-- Footer -->
+    <div class="bg-indigo-900 w-full">
+        <div class="px-24 mx-auto grid grid-cols-3 pt-8 gap-10">
+            <div>
+                <h4 class="text-white text-2xl font-semibold">Contact Us</h4>
+                <p class="text-white text-xl font-semibold py-1">Majestic Mountain Adventure and Tours Pvt. Ltd.</p>
+                <p class="text-gray-200 my-1">
+                    <i class="ri-map-pin-2-fill"></i> <span class="px-1">Bharatpur, Chitwan</span>
+                </p>
+                <p class="text-gray-200 my-1">
+                    <i class="ri-phone-fill"></i> <span class="px-1">+977-9855090899</span>
+                </p>
+                <p class="text-gray-200 my-1">
+                    <i class="ri-mail-line"></i> <span class="px-1">info@mmatnepal.com</span>
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white text-2xl font-semibold">Subscribe Newsletter</h4>
+                    <input type="email" name="email" id="email" placeholder="Email Address" class="bg-transparent text-white border border-white rounded-md p-1 w-6/12 placeholder:text-white block">
+
+                    <input type="submit" value="Subscribe" class="text-black py-1 mt-2 px-8 rounded-md bg-white hover:bg-gray-200 cursor-pointer transition-all duration-500">
+            </div>
+
+            <div>
+                <h4 class="text-white text-2xl font-semibold">Certificate & Partners</h4>
+                <img src="https://mmatnepal.com/images/footer-image.jpeg" class="mt-4">
+            </div>
+
+
+        </div>
+        <div class="bg-indigo-800 w-full mt-4 py-4">
+            <div class="flex justify-between px-24 mx-auto items-center">
+                <p class="text-gray-100 order-2 md:order-1 text-center font-light">
+                    &copy; 2023 All Right Reserved | MMAT NEPAL | Designed and Developed By <a href="https://bitmapitsolution.com" class="hover:underline hover:text-red-400">BITS</a>
+                </p>
+                <p class="text-gray-100 mt-4 order-1 md:order-2 md:mt-0 text-center font-light flex items-center">
+                    We Accept: <span class="flex pl-4">
+                        <img src="https://mmatnepal.com/images/visa.jpeg">
+                        <img src="https://mmatnepal.com/images/connectips.png">
+                        <img src="https://mmatnepal.com/images/esewa.png">
+                    </span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End of Footer -->
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
