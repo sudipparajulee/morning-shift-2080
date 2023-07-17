@@ -19,6 +19,19 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
+
 <style>
     body{
         font-family: Poppins, sans-serif;
@@ -180,7 +193,7 @@
         <p class="text-gray-700 text-center my-4">Enjoy your time with our wonderful packages</p>
 
         <div class="grid grid-cols-3 gap-10 px-24">
-            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden">
+            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden wow animate__animated animate__fadeInUp " >
                 <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
                 <div class="flex justify-between p-4">
                     <h1 class="font-bold text-lg">Bhutan Tour</h1>
@@ -188,7 +201,7 @@
                 </div>
             </div>
 
-            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden">
+            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden wow animate__animated animate__fadeInUp " >
                 <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
                 <div class="flex justify-between p-4">
                     <h1 class="font-bold text-lg">Bhutan Tour</h1>
@@ -196,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden">
+            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden wow animate__animated animate__fadeInUp " >
                 <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
                 <div class="flex justify-between p-4">
                     <h1 class="font-bold text-lg">Bhutan Tour</h1>
@@ -431,6 +444,42 @@
 
 
 
+    <!-- Gallery -->
+    <div class="grid grid-cols-4 px-24 gap-10 mb-10">
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+
+
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+
+
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+    </div>
+    <!-- End of Gallery  -->
+
+
+
     <!-- Footer -->
     <div class="bg-indigo-900 w-full">
         <div class="px-24 mx-auto grid grid-cols-3 pt-8 gap-10">
@@ -480,6 +529,12 @@
     </div>
     <!-- End of Footer -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        Fancybox.bind('[data-fancybox="gallery"]');
+    </script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
