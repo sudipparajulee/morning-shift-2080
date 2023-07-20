@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
+
+<style>
+    body{
+        font-family: Poppins, sans-serif;
+    }
+</style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex justify-between px-20 bg-amber-500 py-2">
+        <div>
+            <span><a href="" class="bg-white px-1 py-0 rounded-full text-amber-500 mx-1"><i class="ri-facebook-fill"></i></a></span>
+            <span><a href="" class="bg-white px-1 py-0 rounded-full text-amber-500 mx-1"><i class="ri-instagram-line"></i></a></span>
+            <span><a href="" class="bg-white px-1 py-0 rounded-full text-amber-500 mx-1"><i class="ri-whatsapp-line"></i></a></span>
+        </div>
+
+        <div>
+            <span class="text-white mx-2"><i class="ri-phone-fill"></i> +977-9855090899</span>
+            <span class="text-white mx-2"><i class="ri-mail-fill"></i> info@mmatnepal.com</span>
+        </div>
+    </div>
+
+    <!-- Start of Navbar -->
+    <!-- <nav class="xl:flex justify-between items-center xl:px-20 px-5 bg-[#1d508d] sticky top-0 z-50">
+        <div class="flex justify-between items-center">
+            <img src="https://mmatnepal.com/images/logo.png" class="h-16 bg-white" alt="">
+            <i onclick="showHideMenu()" class="ri-menu-line text-white border py-2 px-4 rounded-lg font-bold xl:hidden"></i>
+        </div>
+        <div id="menu" class="xl:block hidden">
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Home</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">About</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Flights</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Packages</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Trekkings</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Blogs</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Client Reviews</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Gallery</a>
+            <a href="index.html" class="text-white font-bold xl:inline block xl:mt-1 mt-4 mx-4">Contact Us</a>
+        </div>
+    </nav> -->
+    <!-- End of Navbar -->
+
+
+
+    <!-- Start PC of Navbar -->
+    <nav class="xl:flex hidden justify-between items-center px-20 bg-[#1d508d] sticky top-0 z-50">
+        <img src="https://mmatnepal.com/images/logo.png" class="h-16 bg-white" alt="">
+        <div>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Home</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">About</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Flights</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Packages</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Trekkings</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Blogs</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Client Reviews</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Gallery</a>
+            <a href="index.html" class="text-white font-bold text-lg mx-4">Contact Us</a>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+
+    <!-- Start of Mobile -->
+    <nav class="xl:hidden block justify-between items-center px-20 bg-[#1d508d] sticky top-0 z-50">
+        <div class="flex justify-between items-center">
+            <img src="https://mmatnepal.com/images/logo.png" class="h-16 bg-white" alt="">
+            <i onclick="showHideMenu()" class="ri-menu-line text-white border py-2 px-4 rounded-lg font-bold"></i>
+        </div>
+        <div id="menu" class="hidden">
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Home</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">About</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Flights</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Packages</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Trekkings</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Blogs</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Client Reviews</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Gallery</a>
+            <a href="index.html" class="text-white font-bold block text-lg mx-4 mt-3">Contact Us</a>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="relative">
+                <img src="https://admin.ntb.gov.np/image-cache/ebc_tk_adventure_2-1624450765.jpeg?p=main&s=1f72965258be9625bee4886c373424ad" class="w-full h-[80vh] object-cover" alt="">
+                <div class="absolute bottom-10 right-4 bg-black bg-opacity-60 text-white p-2 rounded-lg w-4/12">
+                    <h1 class="text-2xl font-bold text-center">Mount Everest</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem consequuntur aliquam deserunt optio facere ratione, praesentium neque, officia necessitatibus iure dolor voluptates, eius reprehenderit nisi beatae? Fugiat non minima animi!</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="relative">
+                <img src="https://admin.ntb.gov.np/image-cache/ebc_tk_adventure_2-1624450765.jpeg?p=main&s=1f72965258be9625bee4886c373424ad" class="w-full h-[80vh] object-cover" alt="">
+                <div class="absolute bottom-10 right-4 bg-black bg-opacity-60 text-white p-2 rounded-lg w-4/12">
+                    <h1 class="text-2xl font-bold text-center">Mount Everest</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem consequuntur aliquam deserunt optio facere ratione, praesentium neque, officia necessitatibus iure dolor voluptates, eius reprehenderit nisi beatae? Fugiat non minima animi!</p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+    <!-- Start of banner -->
+    
+    <!-- End of banner -->
+
+
+    <!-- Start of notice -->
+    <div class="flex px-20 bg-amber-500 items-center">
+        <p class="bg-red-500 text-lg text-white p-2">Notice</p>
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" class="text-white text-lg font-bold" scrollamount="15">This is my notice</marquee>
+    </div>
+    <!-- End of notice -->
+
+    <!-- Start of Services -->
+    <div class="my-8">
+        <h2 class="font-bold text-4xl text-center">Our Services</h2>
+        <p class="text-gray-700 text-center">Here are our services</p>
+
+
+        <div class="swiper mySwiper2 mx-24">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/PDi9xXevHAAWRKuejPIZ.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-40 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/X7SZcxqXmFnMuvQeOAuH.png" alt="">
+                        <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                            Jeep Safari
+                        </div>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="relative group">
+                    <img src="https://mmatnepal.com/public/services/ih0LhytG8tvY2p0jYtCB.png" alt="">
+                    <div class="hidden group-hover:flex absolute inset-0 justify-center items-center font-bold text-4xl bg-blue-500 bg-opacity-50 text-white cursor-pointer">
+                        Jeep Safari
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </div>
+    <!-- End of Services -->
+
+
+    <div class="grid grid-cols-2 my-4">
+        <p class="bg-indigo-900 py-4 text-center font-bold text-white text-xl">About Majestic Mountain Adventure & Tours</p>
+        <p class="bg-amber-500 py-4 text-center font-bold text-white text-xl">Why Travel with Us?</p>
+    </div>
+
+
+    <!-- Start of Packages -->
+    <div class="my-8">
+        <h2 class="font-bold text-4xl text-center">Our Packages</h2>
+        <p class="text-gray-700 text-center my-4">Enjoy your time with our wonderful packages</p>
+
+        <div class="grid grid-cols-3 gap-10 px-24">
+            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden wow animate__animated animate__fadeInUp " >
+                <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden wow animate__animated animate__fadeInUp " >
+                <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+            <div class="rounded-lg shadow hover:-translate-y-2 transition-all duration-500 cursor-pointer group overflow-hidden wow animate__animated animate__fadeInUp " >
+                <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="my-7 text-center">
+            <a href="" class="bg-amber-500 px-4 py-2 rounded-lg hover:text-white transition-all duration-500">See More</a>
+        </div>
+    </div>
+    <!-- End of Packages -->
+
+
+    <div class="bg-white px-32 grid grid-cols-4 gap-10">
+        <div class="my-4 text-center">
+            <p class="text-center ">
+                <i class="ri-car-fill text-amber-500 text-9xl"></i>
+            </p>
+            <h2 class="font-bold text-center text-2xl">Comfortable Journey</h2>
+           
+            <p class="w-72 text-gray-600 mx-auto mt-3">Have a wonderful and enjoyable journey with our travels and tours packages.</p>
+            
+        </div>
+
+        <div class="my-4 text-center">
+            <p class="text-center ">
+                <i class="ri-hotel-line text-amber-500 text-9xl"></i>
+            </p>
+            <h2 class="font-bold text-center text-2xl">Luxuries Hotels</h2>
+            <p class="w-72 text-gray-600 mx-auto mt-3">Have a wonderful and enjoyable journey with our travels and tours packages.</p>
+        </div>
+
+        <div class="my-4 text-center">
+            <p class="text-center ">
+                <i class="ri-customer-service-line text-amber-500 text-9xl"></i>
+            </p>
+            <h2 class="font-bold text-center text-2xl">24*7 Support</h2>
+            <p class="w-72 text-gray-600 mx-auto mt-3">Have a wonderful and enjoyable journey with our travels and tours packages.</p>
+        </div>
+
+        <div class="my-4 text-center">
+            <p class="text-center ">
+                <i class="ri-earth-fill text-amber-500 text-9xl"></i>
+            </p>
+            <h2 class="font-bold text-center text-2xl">Travel Guide</h2>
+            <p class="w-72 text-gray-600 mx-auto mt-3">Have a wonderful and enjoyable journey with our travels and tours packages.</p>
+        </div>
+    </div>
+
+
+    <!-- Start of Flights -->
+    <div class="my-8 px-24 grid grid-cols-2 gap-12">
+        <div>
+            <h1 class="text-indigo-900 text-center font-bold text-4xl">Top <span class="text-amber-500">Domestic</span> Flights</h1>
+            <h3 class="font-bold text-gray-600 text-center">List of Domestic Flights</h3>
+            <div class="grid grid-cols-2 mt-5 group overflow-hidden">
+                <div class="flex justify-center items-center text-center bg-indigo-900 group-hover:bg-amber-500 duration-300">
+                    <h2 class="text-white font-bold">Bharatpur <br> To <br> Pokhara</h2>
+                </div>
+                <div>
+                    <img src="https://mmatnepal.com/public/flights/1aTgX4jTll6QAAfE7iko.jpg" alt="" class="group-hover:scale-105 duration-300">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 mt-5 group overflow-hidden">
+                <div class="flex justify-center items-center text-center bg-indigo-900 group-hover:bg-amber-500 duration-300">
+                    <h2 class="text-white font-bold">Bharatpur <br> To <br> Pokhara</h2>
+                </div>
+                <div>
+                    <img src="https://mmatnepal.com/public/flights/1aTgX4jTll6QAAfE7iko.jpg" alt="" class="group-hover:scale-105 duration-300">
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h1 class="text-indigo-900 text-center font-bold text-4xl">Top <span class="text-amber-500">International</span> Flights</h1>
+            <h3 class="font-bold text-gray-600 text-center">List of International Flights</h3>
+            <div class="grid grid-cols-2 mt-5 group overflow-hidden">
+                <div class="flex justify-center items-center text-center bg-indigo-900 group-hover:bg-amber-500 duration-300">
+                    <h2 class="text-white font-bold">Bharatpur <br> To <br> Pokhara</h2>
+                </div>
+                <div>
+                    <img src="https://mmatnepal.com/public/flights/1aTgX4jTll6QAAfE7iko.jpg" alt="" class="group-hover:scale-105 duration-300">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 mt-5 group overflow-hidden">
+                <div class="flex justify-center items-center text-center bg-indigo-900 group-hover:bg-amber-500 duration-300">
+                    <h2 class="text-white font-bold">Bharatpur <br> To <br> Pokhara</h2>
+                </div>
+                <div>
+                    <img src="https://mmatnepal.com/public/flights/1aTgX4jTll6QAAfE7iko.jpg" alt="" class="group-hover:scale-105 duration-300">
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <div class="my-7 text-center">
+        <a href="" class="bg-amber-500 px-4 py-2 rounded-lg hover:text-white transition-all duration-500">See More</a>
+    </div>
+    
+    <!-- End of Flights -->
+
+
+    <!-- Start of Trekkings -->
+    <div class="my-8">
+        <h2 class="font-bold text-4xl text-center">Our Trekkings</h2>
+        <p class="text-gray-700 text-center my-4">Enjoy your time with our wonderful Trekkings</p>
+
+        <div class="grid grid-cols-3 gap-10 px-24">
+            <div class="rounded-lg shadow transition-all duration-500 cursor-pointer group overflow-hidden">
+                <img class="rounded-t-lg h-56 w-full object-cover group-hover:rotate-1 group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+            <div class="rounded-lg shadow transition-all duration-500 cursor-pointer group overflow-hidden">
+                <img class="rounded-t-lg h-56 w-full object-cover group-hover:rotate-1 group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+            <div class="rounded-lg shadow transition-all duration-500 cursor-pointer group overflow-hidden">
+                <img class="rounded-t-lg h-56 w-full object-cover group-hover:rotate-1 group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End of Trekking -->
+
+    <!-- Start of Reviews  -->
+
+    <div class="bg-white px-32 grid grid-cols-3 gap-10 py-10">
+        <div class="my-4 text-center">
+            <img class="h-12 rounded-full w-12 mx-auto" src="https://mmatnepal.com/public/reviews/blQIdoXtz4Z3KPY2PGQb.jpg" alt="">
+            <div class="my-1 text-lg text-amber-500">
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+            </div>
+            <h2 class="text-xl font-bold">Manish Dhungana</h2>
+            <p class="italic text-gray-500">" Annapurna was awesome. Thanks MMAT for your service. "</p>
+        </div>
+
+        <div class="my-4 text-center">
+            <img class="h-12 rounded-full w-12 mx-auto" src="https://mmatnepal.com/public/reviews/blQIdoXtz4Z3KPY2PGQb.jpg" alt="">
+            <div class="my-1 text-lg text-amber-500">
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+            </div>
+            <h2 class="text-xl font-bold">Manish Dhungana</h2>
+            <p class="italic text-gray-500">" Annapurna was awesome. Thanks MMAT for your service. "</p>
+        </div>
+
+        <div class="my-4 text-center">
+            <img class="h-12 rounded-full w-12 mx-auto" src="https://mmatnepal.com/public/reviews/blQIdoXtz4Z3KPY2PGQb.jpg" alt="">
+            <div class="my-1 text-lg text-amber-500">
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+                <i class="ri-star-fill mx-1"></i>
+            </div>
+            <h2 class="text-xl font-bold">Manish Dhungana</h2>
+            <p class="italic text-gray-500">" Annapurna was awesome. Thanks MMAT for your service. "</p>
+        </div>
+    </div>
+
+    <!-- End of Reviews -->
+
+
+    <!-- Start of Blogs -->
+
+    <div class="my-8">
+        <h2 class="font-bold text-4xl text-center">Our Blogs</h2>
+        <p class="text-gray-700 text-center my-4">Enjoy your time with our wonderful Blogs</p>
+
+        <div class="grid grid-cols-3 gap-10 px-24">
+            <div class="rounded-lg shadow transition-all duration-500 cursor-pointer group overflow-hidden">
+                <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+            <div class="rounded-lg shadow transition-all duration-500 cursor-pointer group overflow-hidden">
+                <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+            <div class="rounded-lg shadow transition-all duration-500 cursor-pointer group overflow-hidden">
+                <img class="rounded-t-lg h-72 w-full object-cover group-hover:scale-105 transition-all duration-500" src="https://mmatnepal.com/public/packages/63KubVdMgcDMjMoNfaET.jpg" alt="">
+                <div class="flex justify-between p-4">
+                    <h1 class="font-bold text-lg">Bhutan Tour</h1>
+                    <p class="text-gray-500">3 Nights/4 Days</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="my-7 text-center">
+            <a href="" class="bg-amber-500 px-4 py-2 rounded-lg hover:text-white transition-all duration-500">See More</a>
+        </div>
+    </div>
+
+    <!-- End of Blogs -->
+
+
+
+    <!-- Gallery -->
+    <div class="grid grid-cols-4 px-24 gap-10 mb-10">
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+
+
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+
+
+        <a
+            data-fancybox="gallery"
+            data-src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg"
+            data-caption="My Caption">
+            <img src="https://mmatnepal.com/public/gallery/picture/16889616701.jpg" class="w-full h-96 object-cover object-center cursor-pointer" alt="" />
+        </a>
+    </div>
+    <!-- End of Gallery  -->
+
+
+
+    <!-- Footer -->
+    <div class="bg-indigo-900 w-full">
+        <div class="px-24 mx-auto grid grid-cols-3 pt-8 gap-10">
+            <div>
+                <h4 class="text-white text-2xl font-semibold">Contact Us</h4>
+                <p class="text-white text-xl font-semibold py-1">Majestic Mountain Adventure and Tours Pvt. Ltd.</p>
+                <p class="text-gray-200 my-1">
+                    <i class="ri-map-pin-2-fill"></i> <span class="px-1">Bharatpur, Chitwan</span>
+                </p>
+                <p class="text-gray-200 my-1">
+                    <i class="ri-phone-fill"></i> <span class="px-1">+977-9855090899</span>
+                </p>
+                <p class="text-gray-200 my-1">
+                    <i class="ri-mail-line"></i> <span class="px-1">info@mmatnepal.com</span>
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white text-2xl font-semibold">Subscribe Newsletter</h4>
+                    <input type="email" name="email" id="email" placeholder="Email Address" class="bg-transparent text-white border border-white rounded-md p-1 w-6/12 placeholder:text-white block">
+
+                    <input type="submit" value="Subscribe" class="text-black py-1 mt-2 px-8 rounded-md bg-white hover:bg-gray-200 cursor-pointer transition-all duration-500">
+            </div>
+
+            <div>
+                <h4 class="text-white text-2xl font-semibold">Certificate & Partners</h4>
+                <img src="https://mmatnepal.com/images/footer-image.jpeg" class="mt-4">
+            </div>
+
+
+        </div>
+        <div class="bg-indigo-800 w-full mt-4 py-4">
+            <div class="flex justify-between px-24 mx-auto items-center">
+                <p class="text-gray-100 order-2 md:order-1 text-center font-light">
+                    &copy; 2023 All Right Reserved | MMAT NEPAL | Designed and Developed By <a href="https://bitmapitsolution.com" class="hover:underline hover:text-red-400">BITS</a>
+                </p>
+                <p class="text-gray-100 mt-4 order-1 md:order-2 md:mt-0 text-center font-light flex items-center">
+                    We Accept: <span class="flex pl-4">
+                        <img src="https://mmatnepal.com/images/visa.jpeg">
+                        <img src="https://mmatnepal.com/images/connectips.png">
+                        <img src="https://mmatnepal.com/images/esewa.png">
+                    </span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End of Footer -->
+
+    <script>
+
+    </script>
+    
+    <script>
+        function showHideMenu()
+        {
+            // var menu = document.getElementById('menu');
+            // if(menu.style.display != 'block')
+            // {
+            //     menu.style.display = 'block';
+            // }
+            // else
+            // {
+            //     menu.style.display = 'none';
+            // }
+
+            $("#menu").toggle({height: "0px"});
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        Fancybox.bind('[data-fancybox="gallery"]');
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
