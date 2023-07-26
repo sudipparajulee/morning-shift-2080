@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 </head>
 <body>
     <h1 class=" text-yellow-700">Hello</h1>
+    
+
+    <br><br><br><br>
+
+    <img class="myimage" src="https://bitmapitsolution.com/images/team_images/myimage_1684143425.png" alt="">    
+
+    <script src="blowup.js"></script>
+    
+    <style>
+
+    </style>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".myimage").blowup({
+            round      :true,
+            width      : 400,
+            height     : 400,
+            background :"#FFF",
+            shadow     :"0 8px 17px 0 rgba(0, 0, 0, 0.2)",
+            border     :"6px solid #FFF",
+            cursor     :true,
+            zIndex     : 999999,
+            scale      : 2,
+            customClasses :"",
+        });
+    });
+</script>
 </body>
 </html>
